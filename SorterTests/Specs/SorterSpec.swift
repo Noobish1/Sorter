@@ -61,8 +61,8 @@ internal final class SorterSpec: QuickSpec {
                 var actual: SortResult!
                 
                 beforeEach {
-                    actual = Sorter.sortResult(from: [SortResult(lhs: 1, is: .lessThan, rhs: 1),
-                                                      SortResult(lhs: "a", is: .lessThan, rhs: "b")])
+                    actual = Sorter.sortResult(from: [SortResult(lhs: 1, is: SortOperator.lessThan, rhs: 1),
+                                                      SortResult(lhs: "a", is: SortOperator.lessThan, rhs: "b")])
                 }
                 
                 it("should return the correct sortResult from the given inputs") {
