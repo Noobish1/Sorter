@@ -10,4 +10,4 @@ script:
     - set -o pipefail && xcodebuild build-for-testing test-without-building -scheme Sorter -workspace Sorter.xcworkspace -sdk iphonesimulator -destination "name=iPhone 5s" | xcpretty
 
 after_success:
-    - bash <(curl -s https://codecov.io/bash)
+    - bash <(curl -s https://codecov.io/bash) -J 'Sorter'
