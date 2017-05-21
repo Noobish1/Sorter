@@ -1,0 +1,16 @@
+language: objective-c
+osx_image: xcode8.3
+rvm:
+    - 2.3.0
+cache:
+    - bundler
+    - cocoapods
+
+before_install:
+    - bundle install
+
+script:
+    - set -o pipefail && xcodebuild build-for-testing test-without-building -scheme Sorter -workspace Sorter.xcworkspace -sdk iphonesimulator -destination "id=DB794781-65A7-4884-8D00-AAC3CBD39A44" | xcpretty
+
+after_success:
+    - bash <(curl -s https://codecov.io/bash) -J 'Sorter'
