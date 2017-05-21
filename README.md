@@ -62,7 +62,7 @@ public func > <T: Comparable>(lhs: T, rhs: T) -> SortResult {
 ```
 
 Defining your own is as easy as conforming to the `SortOperatorProtocol`
-```
+```swift
 public protocol SortOperatorProtocol {
     associatedtype Object: Comparable
     
