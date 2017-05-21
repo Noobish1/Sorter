@@ -1,6 +1,12 @@
 import Foundation
 
-public enum SortOperator<T: Comparable> {
+public protocol SortOperatorProtocol {
+    associatedtype Object: Comparable
+    
+    var closure: (Object, Object) -> Bool { get }
+}
+
+public enum SortOperator<T: Comparable>: SortOperatorProtocol {
     case lessThan
     case greaterThan
     
@@ -13,9 +19,9 @@ public enum SortOperator<T: Comparable> {
 }
 
 public func < <T: Comparable>(lhs: T, rhs: T) -> SortResult {
-    return SortResult(lhs: lhs, is: .lessThan, rhs: rhs)
+    return SortResult(lhs: lhs, is: SortOperator.lessThan, rhs: rhs)
 }
 
 public func > <T: Comparable>(lhs: T, rhs: T) -> SortResult {
-    return SortResult(lhs: lhs, is: .greaterThan, rhs: rhs)
+    return SortResult(lhs: lhs, is: SortOperator.greaterThan, rhs: rhs)
 }

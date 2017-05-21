@@ -4,7 +4,7 @@ public enum SortResult {
     case equal(forcedResult: Bool)
     case notEqual(Bool)
     
-    public init<T: Comparable>(lhs: T, is f: SortOperator<T>, rhs: T) {
+    public init<T: Comparable, O: SortOperatorProtocol>(lhs: T, is f: O, rhs: T) where O.Object == T {
         let forcedResult = f.closure(lhs, rhs)
         
         if lhs == rhs {
