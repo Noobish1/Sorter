@@ -1,7 +1,7 @@
 import Foundation
 
 public final class Sorter {
-    //MARK: Raw sort results
+    // MARK: Raw sort results
     public static func rawSortResult<T>(from sorts: [Sort<T>], lhs: T, rhs: T) -> Bool {
         var mutableSorts = sorts
         var sortResult = mutableSorts.removeFirst().closure(lhs, rhs)
@@ -17,7 +17,7 @@ public final class Sorter {
         return rawSortResult(from: sortsClosures.map(Sort.init), lhs: lhs, rhs: rhs)
     }
     
-    //MARK: Sorting
+    // MARK: Sorting
     public static func sort<T>(objects: [T], using sortClosures: [SortClosure<T>]) -> [T] {
         return sort(objects: objects, using: sortClosures.map(Sort.init))
     }
@@ -26,7 +26,7 @@ public final class Sorter {
         return objects.sorted { rawSortResult(from: sorts, lhs: $0, rhs: $1) }
     }
     
-    //MARK: Sort results
+    // MARK: Sort results
     public static func sortResult(from sortResults: [SortResult]) -> SortResult {
         var mutableSortResults = sortResults
         var sortResult = mutableSortResults.removeFirst()

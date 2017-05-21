@@ -15,7 +15,6 @@ opt_in_rules:
   - fatal_error_message
 included:
   - Sorter
-  - SorterTests
 # parameterized rules can be customized from this configuration file
 cyclomatic_complexity:
   ignores_case_statements: true
@@ -40,13 +39,6 @@ type_name:
     warning: 50
     error: 60
 custom_rules:
-  no_space_between_marks:
-    name: "MARK usage"
-    regex: '//\s+MARK'
-    match_kinds:
-      - comment
-    message: "Don't place anything between the slashes and MARK"
-    severity: error
   extension_acls:
     name: "Extension ACLs"
     regex: '^extension \w+ \{.*?$'
