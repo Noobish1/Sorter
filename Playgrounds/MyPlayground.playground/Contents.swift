@@ -1,9 +1,6 @@
-# Sorter
-A concept of sorting in Swift.
+//: Playground - noun: a place where people can play
 
-# Example
-
-```swift
+import UIKit
 import Sorter
 
 //MARK: Example model
@@ -30,5 +27,3 @@ let objects = [tacoBell, kfc, mcdonalds]
 let sorts = [Restaurant.ratingSort, Restaurant.alphabeticalSort]
 
 let sortedObjects = Sorter.sort(objects: objects, using: sorts)
-// [mcdonalds, kfc, tacobell]
-```

@@ -55,6 +55,7 @@
 		75A682EA1ED1388F00167E85 /* .codebeatignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .codebeatignore; sourceTree = "<group>"; };
 		75A682EE1ED140AB00167E85 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		75A682EF1ED140AB00167E85 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		75F1B6381ED21B840058CA5C /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = MyPlayground.playground; path = Playgrounds/MyPlayground.playground; sourceTree = "<group>"; };
 		C7BC9A267BEB9FE2A9BD0E7A /* Pods-Sorter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sorter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sorter/Pods-Sorter.debug.xcconfig"; sourceTree = "<group>"; };
 		D711679EAB9DF56CA8B77B68 /* Pods_SorterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SorterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED6C9BCBA990312AB7B176A1 /* Pods-Sorter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sorter.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sorter/Pods-Sorter.release.xcconfig"; sourceTree = "<group>"; };
@@ -86,6 +87,7 @@
 		75075AA81EB38E3F00F2BC3D = {
 			isa = PBXGroup;
 			children = (
+				75F1B6371ED21B670058CA5C /* Playgrounds */,
 				F5DF48A89648A84D7C1D06C9 /* Frameworks */,
 				E36DC891AFCCB7EE4F10383F /* Pods */,
 				75075AB31EB38E3F00F2BC3D /* Products */,
@@ -175,6 +177,14 @@
 				7590F9861ED0F2270095C431 /* SortResult.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		75F1B6371ED21B670058CA5C /* Playgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				75F1B6381ED21B840058CA5C /* MyPlayground.playground */,
+			);
+			name = Playgrounds;
 			sourceTree = "<group>";
 		};
 		E36DC891AFCCB7EE4F10383F /* Pods */ = {
