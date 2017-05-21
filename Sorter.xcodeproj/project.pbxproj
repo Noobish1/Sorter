@@ -11,10 +11,6 @@
 		4302283358AAA63D53658290 /* libPods-Sorter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE5355D174A2216E9BE8F967 /* libPods-Sorter.a */; };
 		75075ABC1EB38E3F00F2BC3D /* Sorter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75075AB21EB38E3F00F2BC3D /* Sorter.framework */; };
 		75075AC31EB38E3F00F2BC3D /* Sorter.h in Headers */ = {isa = PBXBuildFile; fileRef = 75075AB51EB38E3F00F2BC3D /* Sorter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		75075AD31EB38EF600F2BC3D /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 75075ACE1EB38EF600F2BC3D /* .swiftlint.yml */; };
-		75075AD41EB38EF600F2BC3D /* Gemfile in Resources */ = {isa = PBXBuildFile; fileRef = 75075ACF1EB38EF600F2BC3D /* Gemfile */; };
-		75075AD51EB38EF600F2BC3D /* .swift-version in Resources */ = {isa = PBXBuildFile; fileRef = 75075AD01EB38EF600F2BC3D /* .swift-version */; };
-		75075AD61EB38EF600F2BC3D /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 75075AD11EB38EF600F2BC3D /* .gitignore */; };
 		75075AD81EB3908C00F2BC3D /* SortOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75075AD71EB3908C00F2BC3D /* SortOperator.swift */; };
 		75075ADA1EB390AF00F2BC3D /* SortResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75075AD91EB390AF00F2BC3D /* SortResult.swift */; };
 		75075ADC1EB391D300F2BC3D /* Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75075ADB1EB391D300F2BC3D /* Sort.swift */; };
@@ -23,9 +19,6 @@
 		7590F9871ED0F2270095C431 /* SortResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7590F9861ED0F2270095C431 /* SortResult.swift */; };
 		7590F9891ED0FE6E0095C431 /* SortOperatorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7590F9881ED0FE6E0095C431 /* SortOperatorSpec.swift */; };
 		75A682E61ED12C0F00167E85 /* SorterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A682E51ED12C0F00167E85 /* SorterSpec.swift */; };
-		75A682E81ED1385800167E85 /* codecov.yml in Resources */ = {isa = PBXBuildFile; fileRef = 75A682E71ED1385800167E85 /* codecov.yml */; };
-		75A682EB1ED1388F00167E85 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = 75A682E91ED1388F00167E85 /* .travis.yml */; };
-		75A682EC1ED1388F00167E85 /* .codebeatignore in Resources */ = {isa = PBXBuildFile; fileRef = 75A682EA1ED1388F00167E85 /* .codebeatignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +53,8 @@
 		75A682E71ED1385800167E85 /* codecov.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = codecov.yml; sourceTree = "<group>"; };
 		75A682E91ED1388F00167E85 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 		75A682EA1ED1388F00167E85 /* .codebeatignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .codebeatignore; sourceTree = "<group>"; };
+		75A682EE1ED140AB00167E85 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		75A682EF1ED140AB00167E85 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C7BC9A267BEB9FE2A9BD0E7A /* Pods-Sorter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sorter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sorter/Pods-Sorter.debug.xcconfig"; sourceTree = "<group>"; };
 		D711679EAB9DF56CA8B77B68 /* Pods_SorterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SorterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED6C9BCBA990312AB7B176A1 /* Pods-Sorter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sorter.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sorter/Pods-Sorter.release.xcconfig"; sourceTree = "<group>"; };
@@ -102,6 +97,8 @@
 				75075ACE1EB38EF600F2BC3D /* .swiftlint.yml */,
 				75A682E91ED1388F00167E85 /* .travis.yml */,
 				75075ACF1EB38EF600F2BC3D /* Gemfile */,
+				75A682EE1ED140AB00167E85 /* LICENSE */,
+				75A682EF1ED140AB00167E85 /* README.md */,
 				75A682E71ED1385800167E85 /* codecov.yml */,
 			);
 			sourceTree = "<group>";
@@ -303,13 +300,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75A682EB1ED1388F00167E85 /* .travis.yml in Resources */,
-				75075AD61EB38EF600F2BC3D /* .gitignore in Resources */,
-				75075AD51EB38EF600F2BC3D /* .swift-version in Resources */,
-				75A682E81ED1385800167E85 /* codecov.yml in Resources */,
-				75075AD41EB38EF600F2BC3D /* Gemfile in Resources */,
-				75075AD31EB38EF600F2BC3D /* .swiftlint.yml in Resources */,
-				75A682EC1ED1388F00167E85 /* .codebeatignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
