@@ -7,7 +7,7 @@ cache:
     - cocoapods
 
 script:
-    - set -o pipefail && xcodebuild build-for-testing test-without-building -scheme Sorter -workspace Sorter.xcworkspace -sdk iphonesimulator -destination "id=DB794781-65A7-4884-8D00-AAC3CBD39A44" | xcpretty
+    - set -o pipefail && xcodebuild build-for-testing test-without-building -scheme Sorter -workspace Sorter.xcworkspace -sdk iphonesimulator -destination "name=iPhone 5s" | xcpretty
 
 after_success:
     - bash <(curl -s https://codecov.io/bash)
