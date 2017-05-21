@@ -3,7 +3,7 @@
 # Sorter
 A concept for sorting in Swift.
 
-# Example
+## Example
 
 ```swift
 import Sorter
@@ -33,4 +33,39 @@ let sorts = [Restaurant.ratingSort, Restaurant.alphabeticalSort]
 
 let sortedObjects = Sorter.sort(objects: objects, using: sorts)
 // [mcdonalds, kfc, tacobell]
+```
+ 
+## Built in operators
+
+There are a few built in operators that come with Sorter.
+
+```swift
+public enum SortOperator<T: Comparable>: SortOperatorProtocol {
+    case lessThan
+    case greaterThan
+    
+    public var closure: ((T, T) -> Bool) {
+        switch self {
+            case .lessThan: return { $0 < $1 }
+            case .greaterThan: return { $0 > $1 }
+        }
+    }
+}
+
+public func < <T: Comparable>(lhs: T, rhs: T) -> SortResult {
+    return SortResult(lhs: lhs, is: SortOperator.lessThan, rhs: rhs)
+}
+
+public func > <T: Comparable>(lhs: T, rhs: T) -> SortResult {
+    return SortResult(lhs: lhs, is: SortOperator.greaterThan, rhs: rhs)
+}
+```
+
+Defining your own is as easy as conforming to the `SortOperatorProtocol`
+```
+public protocol SortOperatorProtocol {
+    associatedtype Object: Comparable
+    
+    var closure: (Object, Object) -> Bool { get }
+}
 ```
